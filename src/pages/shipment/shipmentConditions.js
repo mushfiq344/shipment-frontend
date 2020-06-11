@@ -43,7 +43,7 @@ const ShipmentConditions = (props) => {
                 </div>
             </div>
 
-            <div>shipment here</div>
+
 
         </div>
 

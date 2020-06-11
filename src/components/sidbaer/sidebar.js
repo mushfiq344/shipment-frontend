@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import logo from "../../assets/images/xplex-dark.png";
+import logo from "../../assets/images/porteagle-inv.png";
 import logo_compact from "../../assets/images/logo/compact-logo.png";
 
 import UserPanel from "./userPanel";
@@ -163,7 +163,7 @@ const Sidebar = (props) => {
           <div className="logo-wrapper compactLogo">
             <Link to="/dashboard/default">
               <img className="blur-up lazyloaded" src={logo_compact} alt="" width="200px" />
-              <img className="blur-up lazyloaded" src={logo} alt="" width="200px" />
+              <img className="blur-up lazyloaded mt-2" src={logo} alt="" width="180px" />
             </Link>
           </div>
         </div>
