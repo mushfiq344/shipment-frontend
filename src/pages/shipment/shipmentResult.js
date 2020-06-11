@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import Layout from "../../components/layout/layout";
+import { remoteServer } from "../../variables";
 import '../../css/movie-server.css';
 import { ShipmentConditions } from "./shipmentConditions";
 export default function ShipmentResult(props) {
-    const [url, setUrl] = useState('http://127.0.0.1:8000/api/allShipments');
+    const [url, setUrl] = useState(remoteServer + '/allShipments');
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);

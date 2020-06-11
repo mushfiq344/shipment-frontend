@@ -1,0 +1,2 @@
+1.got to movie-server-frontend\src\variables.js
+2.update the varibles according to your usage

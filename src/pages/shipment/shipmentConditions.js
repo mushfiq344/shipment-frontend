@@ -1,26 +1,26 @@
 import React, { useState } from "react";
-
+import { remoteServer } from "../../variables";
 const ShipmentConditions = (props) => {
     const [text, setText] = useState("");
     const [searchCon, setSearchCon] = useState("select");
-    const [searchValue, setSearchValue] = useState("http://127.0.0.1:8000/api/allShipments");
+    const [searchValue, setSearchValue] = useState(remoteServer + "/allShipments");
 
     const setCriteriaAsText = (e) => {
         setText(e.target.value)
         setSearchCon("text");
-        //setSearchValue("http://127.0.0.1:8000/api/shipmentsSearchByName/" + e.target.value);
-        props.updateUrl("http://127.0.0.1:8000/api/shipmentsSearchByName/" + e.target.value)
+
+        props.updateUrl(remoteServer + "/shipmentsSearchByName/" + e.target.value)
     }
     const setCriteriaAsSelect = (e) => {
 
         setSearchCon("select");
         if (e.target.value == "total") {
-            props.updateUrl("http://127.0.0.1:8000/api/shipmentsOrderByTotal")
-            //setSearchValue("http://127.0.0.1:8000/api/shipmentsOrderByTotal");
+            props.updateUrl(remoteServer + "/shipmentsOrderByTotal")
+
         }
         else if (e.target.value == "id") {
-            props.updateUrl("http://127.0.0.1:8000/api/shipmentsOrderById")
-            // setSearchValue("http://127.0.0.1:8000/api/shipmentsOrderById");
+            props.updateUrl(remoteServer + "/shipmentsOrderById")
+
         }
 
     }
