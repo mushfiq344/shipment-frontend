@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import logo from "../../assets/images/porteagle-inv.png";
-import logo_compact from "../../assets/images/logo/compact-logo.png";
+import logo_compact from "../../assets/images/porteagle.png";
 
 import UserPanel from "./userPanel";
 import { MENUITEMS } from "../../constant/menu";

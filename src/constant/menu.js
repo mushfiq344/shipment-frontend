@@ -39,27 +39,14 @@ import {
 
 export const MENUITEMS = [
   {
-    title: "Films",
+    title: "Shipments",
     icon: Home,
     type: "sub",
     badgeType: "primary",
     active: false,
     children: [
-      { path: "/films", title: "Films List", type: "link" },
-      { path: "/films/create", title: "Create Movie", type: "link" }
+      { path: "/shipments", title: "Shipment list", type: "link" },
 
-    ],
-  },
-
-
-  // category menu
-  {
-    title: "Catalog",
-    icon: Airplay,
-    type: "sub",
-    active: false,
-    children: [
-      { path: "/admin/catalog/categories", title: "categories", type: "link" },
 
     ],
   },

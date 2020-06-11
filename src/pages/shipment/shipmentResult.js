@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import Layout from "../../components/layout/layout";
 import '../../css/movie-server.css';
 import { ShipmentConditions } from "./shipmentConditions";
@@ -74,7 +75,8 @@ export default function ShipmentResult(props) {
                                 <h4>{item.id}</h4>
                             </div>
                             <div className="col-12" style={{ "textAlign": "center" }}>
-                                <a href={`/shipments/${item.name}`}><h4>{item.name}</h4></a>
+                                <Link to={{ pathname: `/shipments/${item.id}` }}>{item.id}</Link>
+
                             </div>
                             <div className="col-12" style={{ "textAlign": "center" }}>
                                 <h4>Total:{item.total}</h4>

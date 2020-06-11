@@ -4,7 +4,7 @@ import { User, Mail, Lock, Settings, LogOut } from "react-feather";
 //import app from "../../data/base";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
-import { logOut } from '../../pages/auth/session';
+
 const UserMenu = ({ history }) => {
   const [profile, setProfile] = useState("");
 
@@ -29,8 +29,8 @@ const UserMenu = ({ history }) => {
         </div>
         <ul className="profile-dropdown onhover-show-div p-20 profile-dropdown-hover">
           <li>
-            <a onClick={logOut} href="#!">
-              <LogOut /> Log out
+            <a href="#!">
+              Log out
             </a>
           </li>
         </ul>

@@ -4,11 +4,13 @@ import Layout from "../../components/layout/layout";
 
 
 
-// shipment
+// view shipments
 import ShipmentResult from "./shipmentResult"
+import { SingleShipment } from "./singleShipment";
 export default function ShipmentRoutes() {
 
     let { path, url } = useRouteMatch();
+
     return (
         <Layout>
 
@@ -16,9 +18,9 @@ export default function ShipmentRoutes() {
                 <Route exact path={path}>
                     <ShipmentResult></ShipmentResult>
                 </Route>
-                {/* <Route path={`${path}/shipment`} component={Shipment}>
+                <Route path={`${path}/:id`} component={SingleShipment}>
 
-                </Route> */}
+                </Route>
 
             </Switch>
 

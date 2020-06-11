@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react";
-import logo from "../../assets/images/xplex.png";
+import logo from "../../assets/images/porteagle.png";
 import UserMenu from "./userMenu";
 import Notification from "./notification";
 
@@ -82,7 +82,7 @@ const Header = () => {
               <li>
 
               </li>
-              <UserMenu />
+
             </ul>
             <div
               className="d-lg-none mobile-toggle pull-right"

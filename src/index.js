@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import AdminThemeRoutes from "./admin-theme/admin-theme-routes";
 import Cookies from 'js-cookie'
-import { getSession } from './pages/auth/session';
+
 import {
   BrowserRouter as Router,
   Switch,
